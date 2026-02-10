@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - CTF</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .teams-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .teams-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .teams-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .team-card {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .team-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .team-info {
+            margin-bottom: 10px;
+            color: #666;
+        }
+        .team-members {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .member {
+            display: block;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="teams-container">
+        <div class="teams-header">
+            <h1>Teams</h1>
+            <p>Participating teams in the CTF competition</p>
+        </div>
+
+        <div class="teams-grid">
+            <!-- Team 1 -->
+            <div class="team-card">
+                <div class="team-name">Team Alpha</div>
+                <div class="team-info">
+                    <strong>Score:</strong> 4500 points
+                </div>
+                <div class="team-info">
+                    <strong>Rank:</strong> 1st
+                </div>
+                <div class="team-members">
+                    <strong>Members:</strong>
+                    <span class="member">John Doe</span>
+                    <span class="member">Jane Smith</span>
+                    <span class="member">Mike Johnson</span>
+                </div>
+            </div>
+
+            <!-- Team 2 -->
+            <div class="team-card">
+                <div class="team-name">Team Beta</div>
+                <div class="team-info">
+                    <strong>Score:</strong> 4200 points
+                </div>
+                <div class="team-info">
+                    <strong>Rank:</strong> 2nd
+                </div>
+                <div class="team-members">
+                    <strong>Members:</strong>
+                    <span class="member">Alice Brown</span>
+                    <span class="member">Bob Wilson</span>
+                    <span class="member">Carol White</span>
+                </div>
+            </div>
+
+            <!-- Team 3 -->
+            <div class="team-card">
+                <div class="team-name">Team Gamma</div>
+                <div class="team-info">
+                    <strong>Score:</strong> 3800 points
+                </div>
+                <div class="team-info">
+                    <strong>Rank:</strong> 3rd
+                </div>
+                <div class="team-members">
+                    <strong>Members:</strong>
+                    <span class="member">David Lee</span>
+                    <span class="member">Emma Davis</span>
+                    <span class="member">Frank Miller</span>
+                </div>
+            </div>
+
+            <!-- Team 4 -->
+            <div class="team-card">
+                <div class="team-name">Team Delta</div>
+                <div class="team-info">
+                    <strong>Score:</strong> 3500 points
+                </div>
+                <div class="team-info">
+                    <strong>Rank:</strong> 4th
+                </div>
+                <div class="team-members">
+                    <strong>Members:</strong>
+                    <span class="member">Grace Taylor</span>
+                    <span class="member">Henry Martinez</span>
+                    <span class="member">Ivy Anderson</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
